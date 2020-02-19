@@ -19,7 +19,7 @@ int main()
 	DisplayText(userText);//argument
 	DisplayText("blah blah blah");
 
-	string uc = ToUpperCase('y');
+	char uc = ToUpperCase('y');
 	cout << uc << endl;
 	return 0;
 }
@@ -43,8 +43,9 @@ void DisplayText(string text)//parameter
 	cout << text << endl;
 }
 
-string ToUpperCase(char character) 
+char ToUpperCase(char character) 
 {
 	char uppercase;
 	uppercase = toupper(character);
+	return uppercase;
 }
