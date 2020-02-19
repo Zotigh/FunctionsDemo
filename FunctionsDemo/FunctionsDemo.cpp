@@ -15,7 +15,7 @@ int main()
 {
 	string userText;
 	Header();
-	userText = GetTextfromUser();
+	userText = GetTextFromUser();
 	cout << userText << endl;
 	return 0;
 }
