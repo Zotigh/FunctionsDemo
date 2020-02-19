@@ -10,17 +10,20 @@ using namespace std;
 
 void Header(); //prototype
 
-int main() //definition
+int main()
 {
 	Header();
 
 	return 0;
 }
 
-void Header()
+void Header() //definition
 {
+	string userText;
 	cout << "Welcome to Functions Demo!" << endl;
 	GetTextfromUser();
+	userText = GetTextfromUser();
+	cout << userText << endl;
 }
 
 string GetTextfromUser()
