@@ -33,3 +33,8 @@ string GetTextFromUser()
 	getline(cin, text);
 	return text;
 }
+
+void Display(string text)
+{
+	cout << text << endl;
+}
