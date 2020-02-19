@@ -10,7 +10,7 @@ using namespace std;
 // prototypes
 void Header();
 string ToUpperCase(string text);
-void write(string text);
+void Write(string text);
 string GetTextFromUser();
 
 int main()
@@ -38,6 +38,11 @@ string GetTextFromUser()
 	cout << "Please enter the lint of text: ";
 	getline(cin, text);
 	return text;
+}
+
+void Write(string text)
+{
+	cout << text << endl;
 }
 
 void DisplayText(string text)//parameter
