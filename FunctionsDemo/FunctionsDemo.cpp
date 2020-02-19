@@ -16,7 +16,8 @@ int main()
 	string userText;
 	Header();
 	userText = GetTextFromUser();
-	cout << userText << endl;
+	DisplayText(userText);//argument
+	DisplayText("blah blah blah");
 	return 0;
 }
 
@@ -34,7 +35,7 @@ string GetTextFromUser()
 	return text;
 }
 
-void Display(string text)
+void DisplayText(string text)//parameter
 {
 	cout << text << endl;
 }
