@@ -9,6 +9,8 @@
 using namespace std;
 // prototypes
 void Header();
+string ToUpperCase(string text);
+void write(string text);
 string GetTextFromUser();
 
 int main()
@@ -17,10 +19,10 @@ int main()
 	Header();
 	userText = GetTextFromUser();
 	DisplayText(userText);//argument
-	DisplayText("blah blah blah");
 
-	char uc = ToUpperCase('y');
+	string uc = ToUpperCase(userText);
 	cout << uc << endl;
+
 	return 0;
 }
 
@@ -43,9 +45,14 @@ void DisplayText(string text)//parameter
 	cout << text << endl;
 }
 
-char ToUpperCase(char character) 
+string ToUpperCase(string text) 
 {
-	char uppercase;
-	uppercase = toupper(character);
+	string uppercase = "";
+
+	for (int i = 0; i < text.length(); ++i) 
+	{
+		//uppercase to lowercase
+		uppercase += toupper(text.at(i));
+	}
 	return uppercase;
 }
