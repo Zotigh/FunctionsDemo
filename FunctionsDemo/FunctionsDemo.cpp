@@ -20,12 +20,13 @@ int main() //definition
 void Header()
 {
 	cout << "Welcome to Functions Demo!" << endl;
+	GetTextfromUser();
 }
 
 string GetTextfromUser()
 {
-string text;
-cout << "Please enter the lint of text: ";
-getline(cin, text);
-return text;
+	string text;
+	cout << "Please enter the lint of text: ";
+	getline(cin, text);
+	return text;
 }
