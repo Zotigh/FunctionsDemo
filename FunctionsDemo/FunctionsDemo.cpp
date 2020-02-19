@@ -4,6 +4,7 @@
 // Pourpose Demo Functions
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -21,3 +22,10 @@ void Header()
 	cout << "Welcome to Functions Demo!" << endl;
 }
 
+string GetTextfromUser()
+{
+string text;
+cout << "Please enter the lint of text: ";
+getline(cin, text);
+return text;
+}
