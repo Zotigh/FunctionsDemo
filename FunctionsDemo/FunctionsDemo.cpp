@@ -7,26 +7,26 @@
 #include <string>
 
 using namespace std;
-
-void Header(); //prototype
+// prototypes
+void Header();
+string GetTextFromUser();
 
 int main()
 {
+	string userText;
 	Header();
-
+	userText = GetTextfromUser();
+	cout << userText << endl;
 	return 0;
 }
 
-void Header() //definition
+// Definitions
+void Header() 
 {
-	string userText;
 	cout << "Welcome to Functions Demo!" << endl;
-	GetTextfromUser();
-	userText = GetTextfromUser();
-	cout << userText << endl;
 }
 
-string GetTextfromUser()
+string GetTextFromUser()
 {
 	string text;
 	cout << "Please enter the lint of text: ";
